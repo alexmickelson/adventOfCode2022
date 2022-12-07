@@ -15,7 +15,7 @@ mkdir $testName
 mkdir $mainName
 
 cd $className
-dotnet new console
+dotnet new classlib
 cd "../$testName"
 dotnet new nunit
 dotnet add reference "../$className"
