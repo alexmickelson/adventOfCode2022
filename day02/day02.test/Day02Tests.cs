@@ -10,7 +10,7 @@ public class Day02Tests
   {
     var input = "A Y";
     var actualScore = ScoreCalculator.TournamentScore(input);
-    Assert.AreEqual(8, actualScore);
+    Assert.AreEqual(4, actualScore);
   }
   [Test]
   public void TestLoss()
@@ -24,27 +24,27 @@ public class Day02Tests
   {
     var input = "C Z";
     var actualScore = ScoreCalculator.TournamentScore(input);
-    Assert.AreEqual(6, actualScore);
+    Assert.AreEqual(7, actualScore);
   }
   [Test]
   public void TestTwo()
   {
     var input = "A Y\nC Z";
     var actualScore = ScoreCalculator.TournamentScore(input);
-    Assert.AreEqual(14, actualScore);
+    Assert.AreEqual(11, actualScore);
   }
   
   [Test]
-  public void ExamplePart1()
+  public void Example()
   {
     var input = File.ReadAllText("../../../../sampleInput.txt");
-    Assert.AreEqual(15, ScoreCalculator.TournamentScore(input));
+    Assert.AreEqual(12, ScoreCalculator.TournamentScore(input));
   }
   
   [Test]
   public void Part1()
   {
     var input = File.ReadAllText("../../../../input.txt");
-    Assert.AreEqual(11906, ScoreCalculator.TournamentScore(input));
+    Assert.AreEqual(11186, ScoreCalculator.TournamentScore(input));
   }
 }
